@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Creación de Electrodomesticos</h1>
+<div mat-dialog-content>
+   <form [formGroup]="formElect" >
+     <p>
+       <mat-form-field appearance="outline">
+         <mat-label>Nombre</mat-label>
+         <input formControlName="nombre" matInput placeholder="Nombre" >
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Descripción</mat-label>
+         <input formControlName="descripcion" matInput placeholder="Descripción">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Numero de Referencia</mat-label>
+         <input formControlName="numeroReferencia" matInput placeholder="Numero de Referencia">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Unidades disponibles</mat-label>
+         <input formControlName="unidadesDisponibles" matInput placeholder="Unidades disponibles">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Tiempo de garantia(Dias)</mat-label>
+         <input formControlName="TiempoGarantia" matInput placeholder="Tiempo de garantia(Dias)">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Alto(cm)</mat-label>
+         <input formControlName="Alto" matInput placeholder="Alto(cm)">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Largo(cm)</mat-label>
+         <input formControlName="Largo" matInput placeholder="Largo(cm)">
+       </mat-form-field>
+
+       <mat-form-field appearance="outline">
+         <mat-label>Ancho(cm)</mat-label>
+         <input formControlName="Ancho" matInput placeholder="Ancho(cm)">
+       </mat-form-field>
+     </p>
+   </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" (click)="onSave()">Save Product</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</div>
